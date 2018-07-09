@@ -1,0 +1,485 @@
+* {
+	box-sizing: border-box;
+	margin: 0;		
+}	
+	
+/* Header Cabeçalho */	
+	
+header {
+	background-image: url('../imagens/lampada_fire.jpg');					
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-flow: column;		
+	height: 100vh;	
+}
+		
+.imagens {	
+	transition: 1s;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-flow: column;		
+	height: 100vh;
+}
+		
+header h1 {	
+	font-family: 'Mandali', cursive, serif;		
+	font-size: 1.2em;	
+	color: rgba(255,255,255,0.9);
+	text-align: center;	
+}
+		
+header p {
+	font-size: 1.0em;
+	font-family: sans-serif, arial, georgia, serif;
+	text-align: center;
+	color: rgba(255,255,255,0.9);			
+}
+		
+/* Navegação Menu */
+	
+nav {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	justify-content: center;		
+}
+		
+ul {
+	display: flex;
+	flex-flow: column;
+	list-style: none;
+}
+		
+li {	
+	display: flex;
+	flex-flow: column;
+	color: white;
+	padding: 15px;
+	font-size: 1.0em;
+}	
+		
+li a {	
+	display: flex;
+	flex-flow: column;
+	text-decoration: none;
+	color: white;
+	font-family: arial, sans-serif, georgia, serif;		
+	transition: 0.8s;
+}
+		
+li.empresa a {
+	font-family: arial, sans-serif, georgia, serif;
+	color: #FC6000;
+	font-size: 1.2em;		
+}
+			
+/* Sobre */
+		
+.sobre {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	background-color: #0B0B61;	
+}	
+		
+.sobre h2 {
+	font-size: 1.2em;
+	padding-bottom: 15px;
+	color: white;
+	font-family: sans-serif, arial, georgia, serif;	
+}
+		
+.sobre p {
+	text-align: center;
+	font-size: 1.0em;
+	font-family: sans-serif, arial, georgia, serif;
+	color: white;
+	margin-bottom: 25px;
+}
+		
+/* Serviços */
+		
+.servicos {
+	display: flex;
+	flex-flow: column;			
+	justify-content: center;
+}
+		
+.servico {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+	margin: 20px;		
+}
+		
+.servicos_restante h2 {
+	font-size: 1.4em;
+	color: black;
+	font-family: sans-serif, arial, georgia, serif;		
+	text-align: center;
+	margin-bottom: 25px;	
+}		
+		
+.servico p {
+	font-family: sans-serif, arial, georgia, serif;
+	margin-bottom: 25px;	
+	margin-top: 10px;	
+}
+		
+/* portfolio */
+		
+.portfolio {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;		
+}
+		
+.portfolio img {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;		
+}
+		
+.portfolio_restante h2 {
+	font-size: 1.4em;
+	color: black;
+	font-family: sans-serif, arial, georgia, serif;		
+	text-align: center;
+	margin-bottom: 45px;		
+}
+		
+.portfolio h2 {
+	font-size: 1.4em;
+	color: black;
+	font-family: sans-serif, arial, georgia, serif;		
+	text-align: center;
+}	
+		
+/* Contato */
+		
+.contatos {
+	display: flex;
+	flex-flow: column;
+	width: 100%;		
+} 
+		
+.formas_contato {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	align-items: center;
+} 
+		
+.contato h2 {
+	font-size: 1.4em;
+	color: black;
+	font-family: sans-serif, arial, georgia, serif;		
+	text-align: center;	
+}	
+		
+.contato p {
+	font-size: 1.0em;
+	font-family: arial, sans-serif, georgia, serif;			
+}			
+		
+/* formulario */
+		
+.form {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	align-items: center;	
+}
+		
+input, textarea, select, option, button {
+	margin: 5px;			
+	width: 250px;	
+}
+		
+textarea {
+	border: 1px solid white;
+	border-radius: 3px;
+}
+		
+/* rodape */
+footer {
+	margin-top: 25px;
+	background-color: black;
+	padding: 25px;
+}
+		
+/* Extra */
+		
+.redes_sociais {
+	position: absolute;			
+	top: 350px;					
+}
+		
+/* Padronização */
+				
+section {
+	padding-top: 7px;		
+}
+		
+/* Logo */
+		
+.logo {
+	position: absolute;
+	top: 30px;
+	left: 137px;
+	border-radius: 85px;
+}
+				
+/* Carousel */
+
+.disabled {
+	display: none;
+}
+
+.botoes {
+	display: none;		
+}
+
+#prev {
+	display: none;		
+}
+
+#next {
+	display: none;
+}
+		
+/* Bolinhas para selecionar imagem */
+		
+.bolinhas {
+	display: none;
+}
+		
+.bolinhas button {
+	display: none;
+}
+
+/* estilo para desktops com resolução miníma de 730px */
+
+@media screen and (min-width: 730px) {
+	
+	header h1 {	
+		font-family: 'Mandali', cursive, serif;		
+		font-size: 3.4em;	
+		color: rgba(255,255,255,0.9);
+		text-align: center;	
+	}
+
+	header p {
+		font-size: 1.9em;
+		font-family: 'Mandali', cursive, serif;
+		text-align: center;
+		color: rgba(255,255,255,0.9);			
+	}
+
+	nav {
+		position: fixed;
+		display: flex;
+		flex-flow: row;
+		width: 100%;
+		background-color: rgba(0,0,0,0.5);
+		justify-content: center;		
+	}
+		
+	ul {
+		display: flex;
+		flex-flow: row;
+		list-style: none;
+	}
+		
+	li {	
+		display: flex;
+		flex-flow: row;
+		color: white;
+		padding: 15px;
+		font-size: 1.2em;
+	}	
+		
+	li a {	
+		display: flex;
+		flex-flow: column;
+		text-decoration: none;
+		color: white;
+		font-family: arial, sans-serif, georgia, serif;		
+		transition: 0.8s;
+	}
+		
+	li a:hover {
+		color: black;
+		background-color: white;
+		padding: 15px;		
+	}
+		
+	li.empresa a {
+		font-family: arial, sans-serif, georgia, serif;
+		color: #FC6000;
+		font-size: 1.5em;		
+	}
+
+	.botoes {
+		display: flex;
+		flex-flow: row;
+		justify-content: space-around;
+		margin-top: 20px;		
+	}		
+		
+	#prev {
+		background-color: #00BFFF;
+		border: 2px solid;
+		font-size: 1.4em;
+		height: 45px;
+		width: 45px;
+		border-radius: 65px;
+	}
+
+	#next {
+		border: 2px solid;
+		font-size: 1.4em;
+		background-color: #00BFFF;
+		height: 45px;
+		width: 45px;
+		border-radius: 65px;
+	}
+		
+	/* Bolinhas para selecionar imagem */
+		
+	.bolinhas {
+		margin-top: 100px;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+	}
+		
+	.bolinhas button {
+		border: 2px solid white;
+		border-radius: 45px;
+		height: 15px;
+		width: 15px;
+	}
+
+	.sobre h2 {
+		font-size: 1.4em;
+		padding-bottom: 15px;
+		color: white;
+		font-family: sans-serif, arial, georgia, serif;	
+	}
+		
+	.sobre p {
+		text-align: center;
+		font-size: 1.2em;
+		font-family: sans-serif, arial, georgia, serif;
+		color: white;
+		margin-bottom: 25px;
+	}	
+
+	.servicos {
+		display: flex;
+		flex-flow: row;			
+		justify-content: center;
+	}
+
+	.servicos_restante h2 {
+		font-size: 1.8em;
+		color: black;
+		font-family: sans-serif, arial, georgia, serif;		
+		text-align: center;
+		margin-bottom: 75px;	
+	}		
+		
+	.servico {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		text-align: center;
+		margin: 20px;		
+	}
+
+	.portfolio {
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;		
+	}
+		
+	.portfolio img {
+		display: flex;
+		flex-flow: row wrap;
+		width: 50%;		
+	}
+
+	.portfolio_restante h2 {
+		font-size: 1.8em;
+		color: black;
+		font-family: sans-serif, arial, georgia, serif;		
+		text-align: center;
+		margin-bottom: 75px;		
+	}
+
+	.contatos {
+		display: flex;
+		flex-flow: row;
+		width: 100%;		
+	}
+
+	.contato h2 {
+		font-size: 1.8em;
+		color: black;
+		font-family: sans-serif, arial, georgia, serif;		
+		text-align: center;	
+	}	
+		
+	.contato p {
+		font-size: 1.2em;
+		font-family: arial, sans-serif, georgia, serif;			
+	}	
+
+	.formas_contato {
+		display: flex;
+		flex-flow: column;
+		width: 50%;
+		align-items: center;
+	} 
+
+	/* formulario */	
+	.form {
+		display: flex;
+		flex-flow: column;
+		width: 50%;	
+	}
+
+	input, textarea, select, option, button {
+		margin: 5px;
+		padding: 3px;			
+		width: 300px;	
+	}
+		
+	textarea {
+		border: 1px solid white;
+		border-radius: 3px;
+	}
+
+	section {
+		padding-top: 100px;		
+	}
+
+	article .logo {
+		position: absolute;
+		top: 5px;
+		left: 85px;
+		border-radius: 85px;
+	}
+
+	.redes_sociais {
+		position: fixed;			
+		top: 525px;					
+	}
+}
